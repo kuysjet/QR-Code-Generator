@@ -1,0 +1,94 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+
+.align-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.resized-container {
+  width: 40%;
+}
+#qr-reader {
+  max-width: 100%;
+  margin-bottom: 12px;
+}
+#qr-result-table {
+  width: 100%;
+}
+#qr-result-table th {
+  text-align: center;
+}
+.delete-button {
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
+.copy-button {
+  cursor: pointer;
+  color: rgb(34, 26, 248);
+  margin-right: 10px;
+}
+
+.intro {
+  background: linear-gradient(
+        to right,
+        #833ab4 20%,
+        #fd1d1d 30%,
+        #fcb045 70%,
+        #458efc 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+.truncate-text {
+  max-width: 200px; /* Adjust the max-width value as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card {
+  /* border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(209, 24, 24), 
+      rgba(13, 13, 13, 0)
+    ) 1 100%; */
+    box-shadow: 5px 5px 5px #888888;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 30px 0px rgba(0, 0, 0, 0.19); */
+}
+
+.text-light, .win {
+  background-color: #172c4d;
+}
+
+
+
+
+
+
+
+
